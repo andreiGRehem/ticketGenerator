@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingresso Gerado</title>
+    <link type="text/css" rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <main role="main">
+      <div class="container">
+        <!-- 🔵 Topo -->
+        <div class="top flexDev">
+          <div
+            style="
+              width: 40px;
+              height: 40px;
+              background: var(--senary-color);
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              color: var(--quinary-color);
+              margin-right: 12px;
+              font-size: 1.2rem;
+            "
+          >
+            R
+          </div>
+          <h2>Rehem Code</h2>
+        </div>
+
+        <!-- 🔵 Mensagem -->
+        <div class="intro-container flexDev">
+          <p class="intro intro-main-ticket">
+            🎉 Parabéns,<span id="name"></span>! <br />
+            Seu ingresso está pronto.
+          </p>
+          <p class="intro-sub-ticket">
+            Enviamos uma cópia para o e-mail <br />
+            <span id="email"></span>.  
+            Você também receberá atualizações até a data do evento.
+          </p>
+        </div>
+
+        <!-- 🔵 Ingresso -->
+        <div class="ticket-container flexDev">
+          <!-- Lado esquerdo -->
+          <div class="ticket-left flexDev">
+            <div class="ticket-header flexDev">
+              <div
+                style="
+                  width: 35px;
+                  height: 35px;
+                  background: var(--senary-color);
+                  border-radius: 8px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: bold;
+                  color: var(--quinary-color);
+                  margin-right: 8px;
+                "
+              >
+                R
+              </div>
+              <div class="ticket-title flexDev">
+                <h2>Rehem Code</h2>
+                <span id="date"></span>
+              </div>
+            </div>
+
+            <div class="ticket-item flexDev">
+              <img
+                src="./Images/image-avatar.jpg"
+                alt="Foto do participante"
+                id="userImageUpload"
+                style="
+                  width: 45px;
+                  height: 45px;
+                  border-radius: 12px;
+                  margin-right: 12px;
+                "
+              />
+              <div class="ticket-item-text flexDev">
+                <h3 id="name2"></h3>
+                <label for="github">
+                  <img src="./Images/icon-github.svg" alt="GitHub" />
+                  <span id="github"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lado direito -->
+          <div class="ticket-right">
+            <h3>🎟️ #123456789</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./Js/ticket.js"></script>
+  </body>
+</html>

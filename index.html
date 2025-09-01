@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Ingressos</title>
+    <link type="text/css" rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <main role="main">
+      <img
+        id="bg-squiggly-blue"
+        src="./imagens/8068.svg"
+        alt=""
+      />
+      <div class="container">
+        <!-- 🔵 Topo -->
+        <div class="top flexDev">
+          <div
+            style="
+              width: 40px;
+              height: 40px;
+              background: var(--senary-color);
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+              color: var(--quinary-color);
+              margin-right: 12px;
+              font-size: 1.2rem;
+            "
+          >
+            R
+          </div>
+          <h2>Rehem Code</h2>
+        </div>
+
+        <!-- 🔵 Intro -->
+        <div class="intro-container flexDev">
+          <p class="intro">🚀 Sua jornada para a <strong>Rehem Code 2025</strong> começa aqui!</p>
+          <p class="intro-sub">
+            Garanta agora o seu ingresso para a maior conferência de programação do próximo ano.
+          </p>
+        </div>
+
+        <!-- 🔵 Formulário -->
+        <div class="form flexDev">
+          <div class="form">
+            <!-- Upload Avatar -->
+            <div class="form-group flexDev">
+              <label for="image">Foto de Perfil</label>
+              <div class="input-file">
+                <div class="image-preview" id="image-preview">
+                  <img alt="preview" id="show-image-user" />
+                  <div class="image-button-action flexDev">
+                    <button
+                      type="button"
+                      id="remove-image"
+                      class="btn-action-image"
+                    >
+                      ❌ Remover
+                    </button>
+                    <button
+                      type="button"
+                      id="change-image"
+                      class="btn-action-image"
+                    >
+                      🔄 Trocar
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Overlay simplificado -->
+                <div class="image-preview-overlay" id="image-preview-overlay">
+                  <label for="file-input" style="cursor: pointer;">
+                    📤
+                  </label>
+                  <p>Arraste e solte ou clique para selecionar uma foto</p>
+                  <input id="file-input" type="file" required />
+                </div>
+              </div>
+
+              <!-- Info -->
+              <label class="label-file" id="file-error">
+                ⚠️ <span id="label-file-info">
+                  Envie sua foto (JPG ou PNG, tamanho máximo 500kB)
+                </span>
+              </label>
+            </div>
+
+            <!-- Nome -->
+            <div class="form-group flexDev">
+              <label for="name">Nome Completo</label>
+              <input id="name" type="text" name="name" required placeholder="Digite seu nome" />
+            </div>
+
+            <!-- Email -->
+            <div class="form-group flexDev">
+              <label for="userEmail">E-mail</label>
+              <input
+                id="userEmail"
+                type="email"
+                name="email"
+                required
+                placeholder="seuemail@exemplo.com"
+              />
+            </div>
+
+            <!-- Github -->
+            <div class="form-group flexDev">
+              <label for="github">Usuário do GitHub</label>
+              <input
+                id="github"
+                type="text"
+                name="github"
+                required
+                placeholder="@seuusuario"
+              />
+            </div>
+
+            <!-- Botão -->
+            <div class="form-group flexDev">
+              <input type="submit" value="🎟️ Gerar Meu Ingresso" id="ticket" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./Js/script.js"></script>
+  </body>
+</html>
